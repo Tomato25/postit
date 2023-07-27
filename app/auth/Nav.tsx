@@ -2,9 +2,12 @@ import Link from "next/link";
 import Login from "./login";
 import Logged from "./Logged";
 import {getServerSession} from 'next-auth/next'
-import { authOptions } from "../../pages/api/auth/[...nextauth]";
+import { authOptions, }  from "../../pages/api/auth/[...nextauth]";
+import { AuthOptions } from "next-auth";
 
-export default async function Nav() {
+export default async function Nav(
+  authOptions: AuthOptions
+) {
 
     const session = await getServerSession(authOptions)
     console.log(session)
