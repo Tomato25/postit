@@ -16,7 +16,7 @@ type EditProps = {
     id: string;
     postId: string;
     userId: string;
-  };
+  }[];
 };
 
 
