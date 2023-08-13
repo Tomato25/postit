@@ -1,12 +1,12 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
-import { AuthOptions } from "next-auth";
+import { NextAuthOptions } from "next-auth";
 import { redirect } from "next/navigation";
 import MyPosts from "./MyPosts"
 
 
 export default async function Dashboard(
-  authOptions : AuthOptions
+  
 ) {
 
 const session = await getServerSession(authOptions)

@@ -2,12 +2,13 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "../auth/[...nextauth]";
 import prisma from "../../../prisma/client";
-import { AuthOptions } from "next-auth";
+import { NextAuthOptions } from "next-auth";
+
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
-  authOptions: AuthOptions 
+  authOptions: NextAuthOptions 
 
 ) {
   if (req.method === "POST") {
