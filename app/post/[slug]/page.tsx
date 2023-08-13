@@ -1,11 +1,10 @@
 "use client";
 
-import AddComment from "@/app/components/AddComment";
-import Post from "@/app/components/Post";
-import { PostType } from "@/app/types/Post";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import Image from "next/image";
+import Post from "../../components/Post";
+import AddComment from "../../components/AddComment";
 
 
 type Comment = {
