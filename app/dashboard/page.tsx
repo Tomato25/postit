@@ -1,6 +1,5 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
-import { NextAuthOptions } from "next-auth";
 import { redirect } from "next/navigation";
 import MyPosts from "./MyPosts"
 
